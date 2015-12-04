@@ -1,0 +1,35 @@
+{{!< default}}{{> header}}
+<main class="container" role="main">
+   {{#foreach posts}}
+   <article class="article-smooth" role="article" itemscope itemtype="http://schema.org/Article">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2">
+            <header>
+               <div class="image-cover"></div>
+               <h1 class="post-title" itemprop="headline"><a class="post-title" href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+            </header>
+            <div class="post-content" itemprop="articleBody">
+               {{excerpt}}&hellip;
+            </div>
+            {{#if tags}}
+            <div>
+               Tags: {{tags separator=" | "}}
+            </div>
+            {{/if}}
+            <div class="author-date">
+               <h6>{{author}} | <span><time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time></span></h6>
+            </div>
+            <div class='bordered'></div>
+         </div>
+      </div>
+   </article>
+   {{/foreach}}
+   {{#if pagination}}
+   <div class="col-lg-8 col-lg-offset-2">
+      {{pagination}}
+   </div>
+   <div class="col-lg-8 col-lg-offset-2">
+      {{> footer}}
+   </div>
+   {{/if}}
+</main>
