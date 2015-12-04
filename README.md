@@ -1,2 +1,2 @@
-# Smooth Theme
+# Smooth
 A Theme for Ghost.JS
