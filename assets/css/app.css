@@ -181,8 +181,23 @@ older-posts:active,
 .icon-github:hover {
   color: #666666; }
 
+.icon-instagram:hover {
+  color: #3f729b; }
+
+.icon-delicious:hover {
+  color: #3399ff; }
+
 .icon-linkedin:hover {
   color: #4875B4; }
+
+.icon-pinterest:hover {
+  color: #bd081c; }
+
+.icon-tumblr:hover {
+  color: #35465c; }
+
+.icon-reddit:hover {
+  color: #ff4500; }
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
