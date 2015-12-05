@@ -1,2 +1,2 @@
-# Spectere-Theme
+# Smooth
 A Theme for Ghost.JS
